@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy — DroneOps Manager</title>
+<style>
+  :root {
+    --accent: #0A7AFF;
+    --ink: #1A1D29;
+    --muted: #5B6270;
+    --bg: #F2F4F8;
+    --card: #FFFFFF;
+    --border: #E2E6ED;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+  }
+  .header {
+    background: var(--accent);
+    color: #fff;
+    padding: 40px 20px 32px;
+    text-align: center;
+  }
+  .header h1 {
+    margin: 0 0 6px;
+    font-size: 1.6rem;
+    font-weight: 700;
+  }
+  .header p {
+    margin: 0;
+    opacity: 0.9;
+    font-size: 0.95rem;
+  }
+  .container {
+    max-width: 720px;
+    margin: -20px auto 60px;
+    padding: 0 20px;
+  }
+  .card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 32px 36px;
+    box-shadow: 0 4px 20px rgba(10, 122, 255, 0.06);
+  }
+  h2 {
+    color: var(--accent);
+    font-size: 1.15rem;
+    margin-top: 32px;
+    margin-bottom: 10px;
+  }
+  h2:first-of-type { margin-top: 0; }
+  p, li { color: var(--ink); font-size: 0.98rem; }
+  ul { padding-left: 22px; }
+  .muted { color: var(--muted); font-size: 0.9rem; }
+  .effective {
+    display: inline-block;
+    background: #EAF3FF;
+    color: var(--accent);
+    border-radius: 999px;
+    padding: 4px 14px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+  }
+  a { color: var(--accent); }
+  footer {
+    text-align: center;
+    color: var(--muted);
+    font-size: 0.85rem;
+    margin-top: 28px;
+  }
+  code {
+    background: #F2F4F8;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-size: 0.9em;
+  }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>DroneOps Manager</h1>
+  <p>Privacy Policy</p>
+</div>
+
+<div class="container">
+  <div class="card">
+    <span class="effective">Effective date: 5 July 2026</span>
+
+    <p>DroneOps Manager ("the app") is a compliance and operations tool for small drone operators. This policy explains what data the app handles and — just as importantly — what it does not do with it.</p>
+
+    <h2>Summary</h2>
+    <p>DroneOps Manager works entirely offline. It has no user accounts, no server, no analytics, and no advertising. The app cannot connect to the internet at all: it does not request the Android <code>INTERNET</code> permission. Every piece of information you enter stays on your device unless you personally choose to export or share it.</p>
+
+    <h2>What data the app stores (locally only)</h2>
+    <p>All of the following is stored in a local database and local file storage on your device only, never transmitted anywhere by the app:</p>
+    <ul>
+      <li>Operator details you enter (legal name, country, accountable manager).</li>
+      <li>Fleet data (drone nicknames, models, serial numbers, maintenance and battery records, and photos you take of your drones).</li>
+      <li>Pilot records (name, date of birth, phone, email, licence details and expiry dates, and any licence document you attach).</li>
+      <li>Flight log entries, including GPS coordinates recorded at takeoff/landing when you actively log a flight.</li>
+      <li>SORA risk assessments and checklist run records you create.</li>
+      <li>PDF documents (Operations Manual, Risk Assessment) generated from the data above.</li>
+    </ul>
+
+    <h2>Permissions the app requests, and why</h2>
+    <ul>
+      <li><strong>Location</strong> (<code>ACCESS_FINE_LOCATION</code>, <code>ACCESS_COARSE_LOCATION</code>) — used only while you are actively logging a flight, to record the takeoff/landing coordinates in your logbook entry. Location is not accessed in the background and is not used for any purpose other than the logbook entry you are creating.</li>
+      <li><strong>Camera</strong> — the app does not hold a standalone camera permission. When you add a photo to a drone or pilot record, it opens your device's own camera app and receives the resulting image back; the app never accesses the camera directly.</li>
+      <li><strong>File access</strong> — the app uses Android's Storage Access Framework for two user-initiated actions: exporting/restoring a backup zip, and attaching a licence document. You choose the file location each time; the app does not browse your files on its own.</li>
+    </ul>
+
+    <h2>Data sharing</h2>
+    <p>DroneOps Manager does not share, sell, or transmit any data to the developer or to any third party, because it has no network connectivity at all. If you use the in-app "Share" action on a generated PDF, or export a backup zip, that file is handed to Android's own share sheet so <em>you</em> can choose where it goes (email, cloud drive, etc.) — that is your own action, not something the app does automatically.</p>
+
+    <h2>Data retention and deletion</h2>
+    <p>All data lives in the app's private storage. You can delete individual records inside the app at any time. Uninstalling the app permanently deletes all app data from your device, since nothing is stored anywhere else.</p>
+
+    <h2>Children's privacy</h2>
+    <p>DroneOps Manager is a professional compliance tool intended for licensed drone operators and pilots. It is not directed at children and is not designed to appeal to children.</p>
+
+    <h2>Changes to this policy</h2>
+    <p>If this policy changes, the effective date above will be updated and the new version will be published at this same URL.</p>
+
+    <h2>Contact</h2>
+    <p>Questions about this policy or the app's data handling can be sent to: <a href="mailto:au.ortakci@gmail.com">au.ortakci@gmail.com</a>.</p>
+  </div>
+
+  <footer>
+    DroneOps Manager — EASA drone compliance for small operators.
+  </footer>
+</div>
+
+</body>
+</html>
