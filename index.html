@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Privacy Policy — DroneOps Manager</title>
+<title>Privacy Policy | DroneOps Manager</title>
 <style>
   :root {
     --accent: #0A7AFF;
@@ -94,12 +94,12 @@
 
 <div class="container">
   <div class="card">
-    <span class="effective">Effective date: 5 July 2026</span>
+    <span class="effective">Effective date: 28 October 2026</span>
 
-    <p>DroneOps Manager ("the app") is a compliance and operations tool for small drone operators. This policy explains what data the app handles and — just as importantly — what it does not do with it.</p>
+    <p>DroneOps Manager ("the app") is a compliance and operations tool for small drone operators. This policy explains what data the app handles and, just as importantly, what it does not do with it.</p>
 
     <h2>Summary</h2>
-    <p>DroneOps Manager works entirely offline. It has no user accounts, no server, no analytics, and no advertising. The app cannot connect to the internet at all: it does not request the Android <code>INTERNET</code> permission. Every piece of information you enter stays on your device unless you personally choose to export or share it.</p>
+    <p>DroneOps Manager works entirely offline. It has no user accounts, no server, no analytics, and no advertising. The app cannot connect to the internet at all: it does not request the Android <code>INTERNET</code> permission. Every piece of information you enter or record stays on your device unless you personally choose to export or share it.</p>
 
     <h2>What data the app stores (locally only)</h2>
     <p>All of the following is stored in a local database and local file storage on your device only, never transmitted anywhere by the app:</p>
@@ -108,22 +108,24 @@
       <li>Fleet data (drone nicknames, models, serial numbers, maintenance and battery records, and photos you take of your drones).</li>
       <li>Pilot records (name, date of birth, phone, email, licence details and expiry dates, and any licence document you attach).</li>
       <li>Flight log entries, including GPS coordinates recorded at takeoff/landing when you actively log a flight.</li>
+      <li>Voice memos you choose to record for a flight (audio files).</li>
       <li>SORA risk assessments and checklist run records you create.</li>
       <li>PDF documents (Operations Manual, Risk Assessment) generated from the data above.</li>
     </ul>
 
     <h2>Permissions the app requests, and why</h2>
     <ul>
-      <li><strong>Location</strong> (<code>ACCESS_FINE_LOCATION</code>, <code>ACCESS_COARSE_LOCATION</code>) — used only while you are actively logging a flight, to record the takeoff/landing coordinates in your logbook entry. Location is not accessed in the background and is not used for any purpose other than the logbook entry you are creating.</li>
-      <li><strong>Camera</strong> — the app does not hold a standalone camera permission. When you add a photo to a drone or pilot record, it opens your device's own camera app and receives the resulting image back; the app never accesses the camera directly.</li>
-      <li><strong>File access</strong> — the app uses Android's Storage Access Framework for two user-initiated actions: exporting/restoring a backup zip, and attaching a licence document. You choose the file location each time; the app does not browse your files on its own.</li>
+      <li><strong>Location</strong> (<code>ACCESS_FINE_LOCATION</code>, <code>ACCESS_COARSE_LOCATION</code>): used only while you are actively logging a flight, to record the takeoff/landing coordinates in your logbook entry. Location is not accessed in the background and is not used for any purpose other than the logbook entry you are creating.</li>
+      <li><strong>Microphone</strong> (<code>RECORD_AUDIO</code>): used only when you tap record on a voice memo for a flight. Android asks for your permission before the first recording; if you decline, everything else in the app keeps working. Each recording is saved as an audio file in the app's private storage on your device. The app never uploads, shares, or transcribes it, does not listen in the background, and records nothing unless you start a recording yourself. You can delete any memo inside the app.</li>
+      <li><strong>Camera</strong>: the app does not hold a standalone camera permission. When you add a photo to a drone or pilot record, it opens your device's own camera app and receives the resulting image back; the app never accesses the camera directly.</li>
+      <li><strong>File access</strong>: the app uses Android's Storage Access Framework for user-initiated actions only: exporting or restoring a backup zip, exporting an inspector pack (a zip of your generated PDFs and flight log), and attaching a licence document. You choose the file location each time; the app does not browse your files on its own.</li>
     </ul>
 
     <h2>Data sharing</h2>
-    <p>DroneOps Manager does not share, sell, or transmit any data to the developer or to any third party, because it has no network connectivity at all. If you use the in-app "Share" action on a generated PDF, or export a backup zip, that file is handed to Android's own share sheet so <em>you</em> can choose where it goes (email, cloud drive, etc.) — that is your own action, not something the app does automatically.</p>
+    <p>DroneOps Manager does not share, sell, or transmit any data to the developer or to any third party, because it has no network connectivity at all. If you use the in-app "Share" action on a generated PDF, or export a backup or an inspector pack, the file is handed to Android's own share sheet or file picker so <em>you</em> choose where it goes (email, cloud drive, etc.). That is your own action, not something the app does automatically. A full backup zip contains all of your app data, including photos and voice memos, so treat it like any other personal file.</p>
 
     <h2>Data retention and deletion</h2>
-    <p>All data lives in the app's private storage. You can delete individual records inside the app at any time. Uninstalling the app permanently deletes all app data from your device, since nothing is stored anywhere else.</p>
+    <p>All data lives in the app's private storage. You can delete individual records and voice memos inside the app at any time. Uninstalling the app permanently deletes all app data from your device, since nothing is stored anywhere else.</p>
 
     <h2>Children's privacy</h2>
     <p>DroneOps Manager is a professional compliance tool intended for licensed drone operators and pilots. It is not directed at children and is not designed to appeal to children.</p>
@@ -136,7 +138,7 @@
   </div>
 
   <footer>
-    DroneOps Manager — EASA drone compliance for small operators.
+    DroneOps Manager · EASA drone compliance for small operators.
   </footer>
 </div>
 
